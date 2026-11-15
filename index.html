@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VidaLink — Conectando vidas a través de la donación</title>
+
+  <!-- GOOGLE FONTS: Inter y Merriweather -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- LAS 2 HOJAS DE ESTILO -->
+  <link rel="stylesheet" href="styles-global.css" />
+  <link rel="stylesheet" href="styles-sections.css" />
+</head>
+<body>
+
+  <!-- MENÚ HORIZONTAL SUPERIOR + BOTÓN HAMBURGUESA -->
+  <header class="Top-Header">
+    <div class="Header-Container">
+      <a href="index.html" target="_self" class="Brand-Logo">
+        🩸 Vida<span>Link</span>
+      </a>
+
+      <button class="Hamburger-Btn" id="hamburgerBtn" aria-label="Abrir menú">
+        ☰ Menú
+      </button>
+
+      <ul class="Horizontal-Menu" id="horizontalMenu">
+        <li><a href="index.html" target="_self" class="active">Inicio</a></li>
+        <li><a href="#como-funciona" target="_self">Cómo funciona</a></li>
+        <li><a href="#galeria-imagenes" target="_self">Campañas (Imágenes)</a></li>
+        <li><a href="#seccion-video" target="_self">Video</a></li>
+        <li><a href="#formulario-donante" target="_self">Formulario</a></li>
+        <li><a href="solicitudes.html" target="_self">Solicitudes Activas</a></li>
+        <li><a href="https://www.gob.pe/minsa" target="_blank" rel="noopener">Portal MINSA ↗</a></li>
+        <li><a href="registro.html" target="_self" class="btn btn-red">Crear cuenta</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="Page-Layout">
+    <!-- MENÚ VERTICAL LATERAL -->
+    <aside class="Vertical-Menu-Aside" aria-label="Menú vertical de secciones">
+      <div class="Vertical-Menu-Title">Navegación Rápida</div>
+      <ul class="Vertical-Menu">
+        <li><a href="#hero-inicio">🏠 Portada Principal</a></li>
+        <li><a href="#confianza">01. Información y Confianza</a></li>
+        <li><a href="#como-funciona">02. De la intención a la acción</a></li>
+        <li><a href="#ejemplo-hospital">03. Caso Hospital Dos de Mayo</a></li>
+        <li><a href="#galeria-imagenes">🖼️ Galería de Imágenes</a></li>
+        <li><a href="#preparate-serif">📖 Prepárate (Fuente Serif)</a></li>
+        <li><a href="#seccion-video">🎬 Video del Producto</a></li>
+        <li><a href="#formulario-donante">📝 Formulario de Registro</a></li>
+        <li><a href="solicitudes.html" target="_self">📋 Ir a Solicitudes (_self)</a></li>
+        <li><a href="registro.html" target="_blank">➕ Abrir Registro (_blank)</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section id="hero-inicio" class="Hero-Box">
+        <div>
+          <span class="Hero-Tag">● PLATAFORMA CÍVICA DE SALUD • LIMA</span>
+          <h1>Conectando vidas a través de la <span>donación</span></h1>
+          <p>
+            Una comunidad que acerca a quienes quieren donar sangre con quienes necesitan apoyo. Coordina tu participación en Lima Metropolitana, de forma voluntaria y con información clara.
+          </p>
+          <div class="Hero-Buttons">
+            <a href="registro.html" target="_self" class="btn btn-red">Crear mi cuenta</a>
+            <a href="solicitudes.html" target="_blank" class="btn btn-outline">Encontrar centros (Nueva pestaña)</a>
+          </div>
+          <small>🛡️ Acreditado bajo lineamientos PRONAHEBAS / MINSA</small>
+        </div>
+
+        <div class="Hero-Image-Card">
+          <img src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?auto=format&fit=crop&w=900&q=80" alt="Donante voluntario y profesional de salud en banco de sangre" />
+          <div class="Image-Caption-Overlay">
+            <strong>Un gesto humano. Una conexión importante.</strong>
+            <p style="font-size: 0.85rem; color: #4B5563;">Donación voluntaria asistida por profesionales de hemoterapia en Lima.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 01: INFORMACIÓN PARA PARTICIPAR CON CONFIANZA -->
+      <section id="confianza" class="Content-Section">
+        <span class="Section-Number">01 — POR QUÉ CONFIAR EN VIDALINK</span>
+        <h2>Información para participar con confianza</h2>
+        <p>Menos incertidumbre, más claridad para dar el siguiente paso.</p>
+
+        <div class="Cards-4-Grid">
+          <article class="Info-Card">
+            <h3>🔔 01. Alertas de solicitudes</h3>
+            <p>Recibe avisos según tu grupo sanguíneo y tu disponibilidad. Tú eliges cómo colaborar.</p>
+          </article>
+          <article class="Info-Card">
+            <h3>📍 02. Centros cercanos</h3>
+            <p>Ubica hospitales por distrito y revisa la información antes de desplazarte.</p>
+          </article>
+          <article class="Info-Card">
+            <h3>🤝 03. Una comunidad solidaria</h3>
+            <p>Participa como donante o solicitante y coordina el siguiente paso con el centro.</p>
+          </article>
+          <article class="Info-Card">
+            <h3>🔒 04. Privacidad desde el inicio</h3>
+            <p>Decide qué información compartes y cuándo deseas recibir avisos de pacientes.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 02: DE LA INTENCIÓN A LA COORDINACIÓN -->
+      <section id="como-funciona" class="Content-Section">
+        <span class="Section-Number">02 — CÓMO FUNCIONA</span>
+        <h2>De la intención a la coordinación</h2>
+        <p>Un recorrido sencillo, sin reemplazar la atención médica del banco de sangre.</p>
+
+        <div class="Cards-4-Grid" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="Info-Card">
+            <span class="Step-Circle">01</span>
+            <h3>Crea tu cuenta</h3>
+            <p>Elige tu rol y completa la información necesaria para participar.</p>
+          </div>
+          <div class="Info-Card">
+            <span class="Step-Circle">02</span>
+            <h3>Encuentra una oportunidad</h3>
+            <p>Explora solicitudes urgentes o busca un centro de donación en tu distrito.</p>
+          </div>
+          <div class="Info-Card">
+            <span class="Step-Circle">03</span>
+            <h3>Coordina con el centro</h3>
+            <p>Expresa tu intención de donar y confirma requisitos y atención antes de ir.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 03: ENTIENDE CÓMO PUEDES AYUDAR -->
+      <section id="ejemplo-hospital" class="Content-Section">
+        <span class="Section-Number">03 — EJEMPLO DE SOLICITUD ACTIVA</span>
+        <h2>Entiende cómo puedes ayudar</h2>
+        <div class="Hospital-Showcase-Grid">
+          <div>
+            <p>Revisa el grupo solicitado, el centro y los pasos de coordinación. No necesitas descifrar datos técnicos ni adivinar el siguiente paso.</p>
+            <p style="margin-top: 12px; color: #4B5563;">Este ejemplo muestra cómo se presenta la información en una solicitud activa dentro de la plataforma.</p>
+          </div>
+
+          <div class="Urgent-Hospital-Card">
+            <span class="Hero-Tag">SOLICITUD URGENTE • HOSP. DOS DE MAYO</span>
+            <h3>Hospital Nacional Dos de Mayo</h3>
+            <div class="Blood-Badge-Row">
+              <div class="Blood-Circle">O+</div>
+              <div>
+                <strong>Grupo O Rh Positivo requerido</strong>
+                <p style="font-size: 0.85rem;">3 de 5 unidades cubiertas • Cercado de Lima</p>
+              </div>
+            </div>
+            <div class="Progress-Bar">
+              <div class="Progress-Fill" style="width: 60%;"></div>
+            </div>
+            <a href="solicitudes.html" target="_self" class="btn btn-red" style="width: 100%;">Crear cuenta para participar</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- AQUÍ EL INTEGRANTE 4 AGREGARÁ LAS SECCIONES 04 A 07 Y EL FOOTER -->
+    </main>
+  </div>
+</body>
+</html>
