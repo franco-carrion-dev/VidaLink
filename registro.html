@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crear Cuenta — VidaLink</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles-global.css" />
+  <link rel="stylesheet" href="styles-sections.css" />
+</head>
+<body>
+
+  <header class="Top-Header">
+    <div class="Header-Container">
+      <a href="index.html" target="_self" class="Brand-Logo">🩸 Vida<span>Link</span></a>
+      <button class="Hamburger-Btn" id="hamburgerBtn">☰ Menú</button>
+      <ul class="Horizontal-Menu" id="horizontalMenu">
+        <li><a href="index.html" target="_self">Inicio (_self)</a></li>
+        <li><a href="solicitudes.html" target="_self">Solicitudes (_self)</a></li>
+        <li><a href="registro.html" target="_self" class="active">Crear Cuenta</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="Page-Layout" style="grid-template-columns: 1fr; max-width: 640px;">
+    <main>
+      <div class="Form-Card">
+        <span class="Hero-Tag">● RED NACIONAL ACTIVA</span>
+        <h1>Únete a VidaLink</h1>
+        <p style="margin-bottom: 20px; color: #4B5563;">Registra tus datos para recibir alertas de compatibilidad o publicar una solicitud.</p>
+
+        <form id="registerPageForm">
+          <div class="Form-Group">
+            <label class="Field-Label" for="regDni">DNI (8 dígitos) *</label>
+            <input type="text" id="regDni" class="Form-Control" maxlength="8" placeholder="74829104" required />
+          </div>
+
+          <div class="Form-Group">
+            <label class="Field-Label" for="regEmail">Correo electrónico *</label>
+            <input type="email" id="regEmail" class="Form-Control" placeholder="diego.rojas@ejemplo.com" required />
+          </div>
+
+          <div class="Form-Group">
+            <label class="Field-Label" for="regBlood">Grupo Sanguíneo (Select - Option) *</label>
+            <select id="regBlood" class="Form-Control" required>
+              <option value="O+">O+ (Rh Positivo)</option>
+              <option value="O-">O- (Rh Negativo)</option>
+              <option value="A+">A+</option>
+              <option value="B+">B+</option>
+              <option value="AB+">AB+</option>
+            </select>
+          </div>
+
+          <div style="display: flex; gap: 12px; margin-top: 20px;">
+            <button type="submit" class="btn btn-red" style="flex: 1;">Crear Cuenta</button>
+            <a href="index.html" target="_self" class="btn btn-outline">Cancelar y Volver</a>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <footer class="Site-Footer">
+    <div class="Footer-Container">
+      <p>© 2026 Startup LifeChain — VidaLink.</p>
+      <ul class="Footer-Links">
+        <li>
+          <a href="https://cdn.www.gob.pe/uploads/document/file/272364/Ley%20N%C2%BA%2029733.pdf" target="_blank" rel="noopener">
+            📄 PDF Ley de Protección de Datos Personales N° 29733
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
