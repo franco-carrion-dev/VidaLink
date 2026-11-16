@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solicitudes y Centros — VidaLink</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles-global.css" />
+  <link rel="stylesheet" href="styles-sections.css" />
+</head>
+<body>
+
+  <header class="Top-Header">
+    <div class="Header-Container">
+      <a href="index.html" target="_self" class="Brand-Logo">🩸 Vida<span>Link</span></a>
+      <button class="Hamburger-Btn" id="hamburgerBtn">☰ Menú</button>
+      <ul class="Horizontal-Menu" id="horizontalMenu">
+        <li><a href="index.html" target="_self">Volver al Inicio (_self)</a></li>
+        <li><a href="solicitudes.html" target="_self" class="active">Solicitudes Urgentes</a></li>
+        <li><a href="registro.html" target="_blank">Abrir Registro en Nueva Pestaña (_blank) ↗</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="Page-Layout">
+    <aside class="Vertical-Menu-Aside">
+      <div class="Vertical-Menu-Title">Filtro de Módulos</div>
+      <ul class="Vertical-Menu">
+        <li><a href="#urgencias-activas">🚨 Código Rojo Activo</a></li>
+        <li><a href="#centros-autorizados">🏥 Centros de Hemoterapia</a></li>
+        <li><a href="index.html" target="_self">⬅ Regresar a Portada</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <section id="urgencias-activas" class="Content-Section">
+        <span class="Section-Number">MÓDULO OPERATIVO • US-23 A US-45</span>
+        <h1>Solicitudes Urgentes Cerca de Ti</h1>
+        <p>Pacientes que requieren donantes compatibles con prioridad médica en Lima Metropolitana.</p>
+
+        <div class="Cards-4-Grid">
+          <article class="Urgent-Hospital-Card">
+            <span class="Hero-Tag">● URGENTE — CÓDIGO ROJO</span>
+            <h3>Hospital Nacional Dos de Mayo</h3>
+            <p>📍 Cercado de Lima (a 2.1 km) • <strong>Tipo requerido: O+</strong></p>
+            <p style="margin: 10px 0; font-size: 0.9rem;">Paciente pediátrico en cirugía cardiovascular. Se requieren 2 unidades de glóbulos rojos.</p>
+            <a href="registro.html" target="_self" class="btn btn-red">Quiero ayudar →</a>
+          </article>
+
+          <article class="Urgent-Hospital-Card">
+            <span class="Hero-Tag" style="background:#DBEAFE; color:#0D47A1;">● PRIORIDAD ALTA — UCI</span>
+            <h3>Hospital Edgardo Rebagliati Martins</h3>
+            <p>📍 Jesús María (a 3.8 km) • <strong>Tipo requerido: O- / A+</strong></p>
+            <p style="margin: 10px 0; font-size: 0.9rem;">Unidad Oncológica requiere 1 unidad de plaquetas por aféresis.</p>
+            <a href="registro.html" target="_self" class="btn btn-red">Quiero ayudar →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="centros-autorizados" class="Content-Section">
+        <span class="Section-Number">GEOLOCALIZACIÓN • US-19 A US-22</span>
+        <h2>Centros de Donación Habilitados</h2>
+        <div class="Cards-4-Grid">
+          <div class="Info-Card">
+            <h3>🏥 Centro de Hemoterapia San Miguel</h3>
+            <p>📍 Av. La Marina 2040 • Abierto hoy: 07:00 - 18:00 hrs</p>
+          </div>
+          <div class="Info-Card">
+            <h3>🏥 Banco de Sangre Santiago de Surco</h3>
+            <p>📍 Av. Primavera 1540 • Abierto hoy: 08:00 - 17:00 hrs</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="Site-Footer">
+    <div class="Footer-Container">
+      <p>© 2026 Startup LifeChain — VidaLink.</p>
+      <ul class="Footer-Links">
+        <li>
+          <a href="https://cdn.www.gob.pe/uploads/document/file/272364/Ley%20N%C2%BA%2029733.pdf" target="_blank" rel="noopener">
+            📄 PDF Ley de Protección de Datos Personales N° 29733
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
