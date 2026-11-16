@@ -1,9 +1,4 @@
-// ==========================================================================
-// ARCHIVO: main.js
-// Autor: Piero Rodríguez Deza
-// Propósito: Control del menú hamburguesa responsive y envío de formularios.
-// ==========================================================================
-
+// Control del Menú Hamburguesa Responsive
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const horizontalMenu = document.getElementById('horizontalMenu');
 
@@ -13,6 +8,7 @@ if (hamburgerBtn && horizontalMenu) {
   });
 }
 
+// Confirmación del Formulario Principal en index.html
 const mainDonorForm = document.getElementById('mainDonorForm');
 if (mainDonorForm) {
   mainDonorForm.addEventListener('submit', (e) => {
@@ -25,6 +21,7 @@ if (mainDonorForm) {
   });
 }
 
+// Confirmación en registro.html
 const registerPageForm = document.getElementById('registerPageForm');
 if (registerPageForm) {
   registerPageForm.addEventListener('submit', (e) => {

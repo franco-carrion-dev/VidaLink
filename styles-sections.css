@@ -1,10 +1,10 @@
 /* ==========================================================================
    HOJA DE ESTILO 2: styles-sections.css
-   Autor: Rai Miguel Angel Pérez Carrión
-   Propósito: Estilos de secciones del Mock-up (Hero, Galería de Imágenes,
-   Video, Fuente Especial Merriweather y Controles de Formulario).
+   Propósito: Estilos de las secciones internas del Mock-up (Hero, Imágenes,
+   Video, Fuente Especial Google Fonts, Tarjetas Hospitalarias y Formularios).
    ========================================================================== */
 
+/* HERO SECTION (Idéntico al Mockup de la diapositiva 16/17) */
 .Hero-Box {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -91,7 +91,7 @@
   padding: 16px;
 }
 
-/* TARJETAS INFORMATIVAS DEL MOCKUP */
+/* SECCIONES DEL MOCKUP (01, 02, 03, 04) */
 .Content-Section {
   margin-bottom: 48px;
   padding-bottom: 32px;
@@ -135,7 +135,7 @@
   margin-bottom: 10px;
 }
 
-/* TARJETA HOSPITAL NACIONAL DOS DE MAYO */
+/* TARJETA HOSPITAL NACIONAL DOS DE MAYO (Mockup) */
 .Hospital-Showcase-Grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -226,7 +226,7 @@
   border: 0;
 }
 
-/* FORMULARIO (Select, Radio, Checkbox) */
+/* FORMULARIO COMPLETO (Select-Option, Radio y Checkbox) */
 .Form-Card {
   background: var(--white);
   border: 1px solid var(--border-light);
@@ -274,6 +274,7 @@
   cursor: pointer;
 }
 
+/* BANNER AZUL OSCURO FINAL (Idéntico al Mockup) */
 .Dark-CTA-Banner {
   background-color: var(--navy-900);
   color: var(--white);

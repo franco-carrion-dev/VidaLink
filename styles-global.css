@@ -1,6 +1,5 @@
-/*========================================================================== 
+/* ==========================================================================
    HOJA DE ESTILO 1: styles-global.css
-   Autor: Christian Díaz Maicelo
    Propósito: Variables del Design System, Menú Horizontal, Menú Vertical,
    Responsive Hamburguesa y Pie de Página (Footer).
    ========================================================================== */
@@ -18,7 +17,7 @@
   --bg-light: #F9FAFB;
   --white: #FFFFFF;
   --font-primary: 'Inter', sans-serif;
-  --font-special: 'Merriweather', serif;
+  --font-special: 'Merriweather', serif; /* Fuente Google Fonts distinta para sección específica */
 }
 
 * {
@@ -88,7 +87,7 @@ body {
   color: var(--red-500);
 }
 
-/* BOTÓN HAMBURGUESA RESPONSIVE */
+/* BOTÓN HAMBURGUESA (Oculto en Desktop, visible en Mobile) */
 .Hamburger-Btn {
   display: none;
   background: var(--red-50);
@@ -101,7 +100,7 @@ body {
   cursor: pointer;
 }
 
-/* LAYOUT CON MENÚ VERTICAL (SIDEBAR) Y CONTENIDO */
+/* LAYOUT CON MENÚ VERTICAL (SIDEBAR) Y CONTENIDO PRINCIPAL */
 .Page-Layout {
   max-width: 1240px;
   margin: 0 auto;
@@ -188,7 +187,7 @@ body {
   color: var(--blue-500);
 }
 
-/* PIE DE PÁGINA (FOOTER) */
+/* PIE DE PÁGINA (FOOTER CON PDF DE LEY DE PROTECCIÓN DE DATOS) */
 .Site-Footer {
   background-color: var(--white);
   border-top: 2px solid var(--border-light);
@@ -220,14 +219,16 @@ body {
   text-decoration: underline;
 }
 
-/* MEDIA QUERIES RESPONSIVE */
+/* DISEÑO RESPONSIVE */
 @media (max-width: 960px) {
   .Page-Layout {
     grid-template-columns: 1fr;
   }
+
   .Vertical-Menu-Aside {
     position: static;
   }
+
   .Vertical-Menu {
     flex-direction: row;
     flex-wrap: wrap;
@@ -238,6 +239,7 @@ body {
   .Hamburger-Btn {
     display: block;
   }
+
   .Horizontal-Menu {
     display: none;
     flex-direction: column;
@@ -250,10 +252,8 @@ body {
     border-bottom: 2px solid var(--border-light);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
   }
+
   .Horizontal-Menu.active {
     display: flex;
   }
 }
-
-
-
